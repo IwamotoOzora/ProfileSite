@@ -1,0 +1,205 @@
+@charset "UTF-8";
+
+/* サイト全体のデザイン */
+
+.section {
+  width: 100%;
+    /*背景画像の設定*/
+     background-size: cover;
+     background-attachment: fixed;
+
+     background-image: url("../images/sky-background-sozai.jpg");
+     animation: bgiLoop 5s linear infinite;
+}
+@keyframes bgiLoop {
+	0%{ background-position: 0 0;}
+	100%{ background-position: 200px 100px;}
+
+}
+
+.section-content {
+    /*全体的な要素の表示設定*/
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 40px 60px;
+    text-align: center;
+
+}
+
+h2 {
+    /*文字の設定*/
+    font-family: 'Noto Sans JP', 'Lato', sans-serif;
+    font-size: 40px;
+    color: #232323;
+    /*囲い*/
+    padding: 0.5em 1em;
+    margin: 1em 0;
+    background: #f4f4f4;
+    border-left: solid 6px #5bb7ae;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.33);
+}
+
+p {
+	font-family: 'Noto Sans JP', 'Lato', sans-serif;
+}
+
+h3 {
+    font-family: 'Noto Sans JP', 'Lato', sans-serif;
+    color: #ff0000;
+}
+
+
+
+/*TOPボタンの設定*/
+#page_top {
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+}
+#page_top a {
+    background-color: #8000ff;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    padding: 20px 20px;
+}
+#page_top a:hover {
+    background-color: #666;
+    text-decoration: none;
+}
+
+/* TOPメニューのデザイン */
+
+.menu {
+	font-family: 'Noto Sans JP', 'Lato', sans-serif;
+	font-size: 13px;
+}
+
+nav ul {
+	display: table;
+	margin: 0 auto;
+	padding: 0 ;
+	width: 80%;
+	text-align: center;
+
+}
+nav li {
+    display: table-cell;
+    min-width: 50px;
+}
+nav a {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    color: #555;
+    padding-bottom: 5px;
+}
+
+nav li:hover {
+	color: #E7DA66;
+	border-bottom: 2px solid #F0E475;
+}
+
+/*section1のデザイン*/
+.theme {
+	/*文字の設定*/
+	font-family: 'Noto Sans JP', sans-serif;
+	/*文の折り返し*/
+	white-space: pre-wrap;
+}
+.theme span {
+	color: #8b0000;
+}
+
+
+
+/*TOP デザイン*/
+#content {
+	color: #8b0000;
+    font-family: 'Indie Flower', cursive;
+    font-size: 30px;
+}
+ul.link  {
+	list-style: none;
+	/*囲い*/
+    margin:2em 0;
+    position: relative;
+    padding: 0.5em 1.5em;
+    border-top: solid 2px black;
+    border-bottom: solid 2px black;
+}
+/*囲い*/
+.link:before, .link:after {
+	content: '';
+    position: absolute;
+    top: -10px;
+    width: 2px;
+    height: -webkit-calc(100% + 20px);
+    height: calc(100% + 20px);
+    background-color: black;
+}
+.link:after {
+    right: 10px;
+}
+.link:before {
+    left: 10px;
+}
+
+ul.link li a {
+	font-family: 'Noto Sans JP', sans-serif;
+    line-height: 1.5;
+    padding: 0.5em 0;
+}
+
+ul.link li a:hover {
+	color: #E7DA66;
+}
+
+/*sectio2のデザイン*/
+/*スクロールボックスのデザイン*/
+
+.scroll_box_text {                /*ボックス内のテキスト設定*/
+	text-align: left;
+    white-space: pre-line;
+    color: #fff;
+}
+
+.scroll_box {                    /*ボックスのデザイン*/
+	position: relative;
+	overflow: hidden;
+	width: 460px;
+	height: 300px;
+	marigin: 2em auto;
+	margin-bottom: 30px;
+	padding: 1em;
+    overflow-y: scroll;
+	border: 8px solid #b2771f;
+	border-radius: 3px;
+    background-color: #006633;
+    box-shadow: 0 0 5px #333, 0 0 5px #555 inset;
+}
+.scroll_box::before,
+.scroll_box::after {
+	position: absolute;
+	content: '';
+	bottom: 0;
+}
+
+
+/*section3のデザイン*/
+ #hobby {
+	position: relative;
+	top: 0px
+}
+.modal {
+	position: relative;
+	top: 0px;
+	overflow: hidden;
+}
+.modal img{
+	transition: 0.5s;
+}
+.modal img:hover {
+	transform: scale(1.2, 1.2);
+}
+
